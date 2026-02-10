@@ -3,6 +3,8 @@ import {
   getAssetFromKV,
   mapRequestToAsset,
 } from "@cloudflare/kv-asset-handler";
+/* eslint-disable-next-line unicorn/require-module-specifiers */
+import type {} from "@cloudflare/workers-types";
 import wsAdapter from "crossws/adapters/cloudflare";
 import { withoutBase } from "ufo";
 import { useNitroApp, useRuntimeConfig } from "nitropack/runtime";
